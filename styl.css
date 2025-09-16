@@ -3,23 +3,32 @@
     padding: 0px;  
 }
 
-#baner{
+#baner {
     background-color: blue;
-    
+    display: flex;           /* aktywuje flexbox */
+    align-items: center;     /* wyśrodkowanie pionowe */
+    justify-content: flex-start; /* logo po lewej stronie */
+    padding: 10px 20px;      /* odstęp od krawędzi */
 }
-#logo{
+
+#logo {
     height: 100px;
-    width: 150px;
+    width: auto;             /* automatyczna szerokość przy zachowaniu proporcji */
+    max-width: 150px;
 }
 
 #main{
     background-color: red;
+    display: flex;
+    flex-direction: column; /* zdjęcia jeden pod drugim */
+    align-items: center;
+    gap: 20px; /* odstępy między zdjęciami */
+    padding: 20px;
 
 }
 
 footer{
     background-color: blue;
-    clear: both;
 }
 
 
@@ -42,9 +51,35 @@ table{
     word-wrap: break-word;  /* tekst zawijany w obrębie kontenera */
   }
 
-#zdj{
-    display: block;
-    max-width: 500px;       /* ustalona maksymalna szerokość zdjęcia */
+img {
+    max-width: 400px;  /* np. zdjęcia nie większe niż 400px na szerokość */
     height: auto;
+    display: block;
     margin: 0 auto;
-  }
+}
+
+
+
+
+
+/* Tablety i telefony */
+@media (max-width: 900px) {
+    img {
+        max-width: 300px; /* mniejsze zdjęcia */
+    }
+}
+
+/* Telefony */
+@media (max-width: 600px) {
+    img {
+        max-width: 100%; /* dopasowują się do szerokości ekranu */
+    }
+}
+
+
+@media (max-width: 600px) {
+    #logo {
+        height: 70px;
+        max-width: 100px;
+    }
+}
