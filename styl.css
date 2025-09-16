@@ -21,3 +21,30 @@ footer{
     background-color: blue;
     clear: both;
 }
+
+
+table{
+    display: flex;
+    justify-content: center; /* poziome środkowanie */
+    align-items: center;     /* pionowe środkowanie */
+    height: 100%;           /* wysokość na 100% widoku */
+    margin: 0;
+}
+
+.image-container {
+    display: inline-block;  /* kontener dopasowuje się do szerokości zdjęcia */
+    text-align: center;     /* tekst pod zdjęciem też wyśrodkowany */
+}
+
+
+.caption {
+    margin-top: 10px;
+    word-wrap: break-word;  /* tekst zawijany w obrębie kontenera */
+  }
+
+#zdj{
+    display: block;
+    max-width: 500px;       /* ustalona maksymalna szerokość zdjęcia */
+    height: auto;
+    margin: 0 auto;
+  }
