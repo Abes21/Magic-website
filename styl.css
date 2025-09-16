@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#baner{
+    background-color: blue;
+    
+}
+#logo{
+    height: 100px;
+    width: 150px;
+}
+
+#main{
+    background-color: red;
+
+}
+
+footer{
+    background-color: blue;
+    clear: both;
+}
